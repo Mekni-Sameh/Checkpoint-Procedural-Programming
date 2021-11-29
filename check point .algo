@@ -1,0 +1,31 @@
+
+FUNCTION Ps()
+VAR
+    V1 : ARRAY_OF INTEGER[3];
+    v2 : ARRAY_OF INTEGER[3];
+    i, j : integer;
+    PS: INTEGER :=0;
+  
+BEGIN
+   Read(v1);
+   Read(v2);
+   For (i=0;i<i.lenght-1) STEP 1 DO
+   For (j=0;i<i.lenght-1) STEP 1 DO 
+   PS := PS + (V[i]* v[j]);
+   write(PS);
+   End FOR
+END
+
+ALGORITHM Dot_Product
+VAR
+Ps: FLOAT;
+
+BEGIN
+    IF (Ps==0) THEN
+    write("Les deux vecteurs sont orthogonaux");
+    ELSE
+    write("Les deux vecteurs ne sont pas orthogonaux");
+    END_IF
+
+END
+
